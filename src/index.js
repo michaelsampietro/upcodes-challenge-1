@@ -76,7 +76,7 @@ function convertRomanToArabic(romanNumber) {
 }
 
 inputs.forEach((input) => {
-  console.log(input, convertRomanToArabic(input));
+  console.log(`${input} -> ${convertRomanToArabic(input)}`);
 });
 
 module.exports = convertRomanToArabic;

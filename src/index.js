@@ -4,7 +4,7 @@ const inputs = require('../inputs');
 /**
  * Converts a roman number to arabic
  * @param {string} parsedNumber
- * @returns the converted number in arabic
+ * @returns the converted number in arabic (or 0 if the input is invalid)
  */
 function convertRomanToArabic(romanNumber) {
   const uppercaseNumber = romanNumber.toUpperCase();

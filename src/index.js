@@ -1,4 +1,5 @@
 const { invalidSubstrings } = require("./utils");
+const inputs = require('../inputs');
 
 /**
  * Converts a roman number to arabic
@@ -74,10 +75,8 @@ function convertRomanToArabic(romanNumber) {
   return sum;
 }
 
-console.log("II", convertRomanToArabic("II"));
-console.log("IV", convertRomanToArabic("IV"));
-console.log("VIII", convertRomanToArabic("VIII"));
-console.log("LXXXIX", convertRomanToArabic("LXXXIX"));
-console.log("XCII", convertRomanToArabic("XCII"));
+inputs.forEach((input) => {
+  console.log(input, convertRomanToArabic(input));
+});
 
 module.exports = convertRomanToArabic;
